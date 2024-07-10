@@ -1,0 +1,23 @@
+node_modules/
+
+pnpm-lock.yaml
+
+**/.gitignore
+**/.npmrc
+**/.prettierignore
+**/.prettierrc
+**/.vscode
+**/LICENSE
+
+**/*.scss
+**/*.css
+
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.husky
+# **/*.json
+**/*.yaml
+**/*.md
