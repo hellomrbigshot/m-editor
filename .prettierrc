@@ -4,6 +4,5 @@
   "useTabs": false,
   "tabWidth": 2,
   "printWidth": 120,
-  "singleAttributePerLine": true,
-  "spaceBeforeFunctionParen": true
+  "singleAttributePerLine": true
 }

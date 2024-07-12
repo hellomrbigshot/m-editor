@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const compat = new FlatCompat({
-	baseDirectory: __dirname,
+  baseDirectory: __dirname,
 })
 
 // export default tseslint.config(
@@ -30,16 +30,16 @@ const compat = new FlatCompat({
 // )
 
 export default [
-	eslint.configs.recommended,
-	...tseslint.configs.recommended,
-	eslintConfigPrettier,
-	eslintPluginReactHooks,
-	// {
-	//   env: { browser: true, es2020: true },
-	//   files: ["**/*.ts", "**/*.tsx", "**/*.vue", "**/*.json"],
-	//   languageOptions: {
-	//     parser: typescriptEslintParser
-	//   },
-	//   ignores: ['dist', '.eslintrc.js'],
-	// }
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  eslintConfigPrettier,
+  eslintPluginReactHooks,
+  // {
+  //   env: { browser: true, es2020: true },
+  //   files: ["**/*.ts", "**/*.tsx", "**/*.vue", "**/*.json"],
+  //   languageOptions: {
+  //     parser: typescriptEslintParser
+  //   },
+  //   ignores: ['dist', '.eslintrc.js'],
+  // }
 ]
