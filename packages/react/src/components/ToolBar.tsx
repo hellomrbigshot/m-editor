@@ -1,5 +1,5 @@
 import { config } from '../assets/js/config'
-import * as  PropTypes from 'prop-types'
+import * as PropTypes from 'prop-types'
 import ToolTip from './ToolTip'
 import '../assets/css/icon.css'
 import '../assets/css/toolbar.scss'
@@ -43,7 +43,10 @@ function Toolbar(props: ToolBarProps) {
             <li key={key}>
               {item.children && item.children.length ? (
                 <ToolTip>
-                  <span className={classnames('iconfont', item.icon)} title={item.title} />
+                  <span
+                    className={classnames('iconfont', item.icon)}
+                    title={item.title}
+                  />
                   <div>
                     {item.children.map((_item, j) => (
                       <div key={j}>

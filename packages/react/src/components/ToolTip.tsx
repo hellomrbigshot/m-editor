@@ -1,5 +1,5 @@
 import { useState, useRef, ReactNode, MouseEvent } from 'react'
-import * as  PropTypes from 'prop-types'
+import * as PropTypes from 'prop-types'
 import classnames from 'classnames'
 import '../assets/css/tooltip.scss'
 
@@ -33,7 +33,10 @@ function ToolTip({ children, content }: ToolTipProps) {
   }
   return (
     <div className="tooltip-wrapper">
-      <div onMouseEnter={(e) => handleMouseEnter(e, 'main')} onMouseLeave={(e) => handleMouseLeave(e, 'main')}>
+      <div
+        onMouseEnter={(e) => handleMouseEnter(e, 'main')}
+        onMouseLeave={(e) => handleMouseLeave(e, 'main')}
+      >
         {Array.isArray(children) ? children[0] : children}
       </div>
       <div

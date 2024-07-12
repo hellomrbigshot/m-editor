@@ -1,7 +1,9 @@
 {
   "semi": false,
   "singleQuote": true,
-  "useTabs": true,
+  "useTabs": false,
   "tabWidth": 2,
   "printWidth": 120,
+  "singleAttributePerLine": true,
+  "spaceBeforeFunctionParen": true
 }

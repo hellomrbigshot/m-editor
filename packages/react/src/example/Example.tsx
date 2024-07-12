@@ -21,11 +21,23 @@ function App() {
   }
   return (
     <>
-      <div className="app" style={{ background: theme === 'light' ? '#fff' : '#2a2c33' }}>
+      <div
+        className="app"
+        style={{
+          background: theme === 'light' ? '#fff' : '#2a2c33',
+        }}
+      >
         <header className="app-header">
-          <img src={reactLogo} className="app-logo app-logo-spin" alt="logo" />
+          <img
+            src={reactLogo}
+            className="app-logo app-logo-spin"
+            alt="logo"
+          />
         </header>
-        <button className="theme-button" onClick={toggleTheme}>
+        <button
+          className="theme-button"
+          onClick={toggleTheme}
+        >
           切换主题
         </button>
         <div style={{ margin: '20px auto', width: '90%' }}>
