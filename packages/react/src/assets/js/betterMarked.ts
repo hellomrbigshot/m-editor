@@ -20,5 +20,3 @@ export const betterMarked = (str: string) => {
   // replace <code> tags to <code class="hljs">
   return (markedFun.parse(str) as string).replace(/<code( class="language-[A-Za-z]*")?>/g, '<code class="hljs">')
 }
-
-function test() {}
