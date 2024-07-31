@@ -7,6 +7,7 @@ import defaultText from './example.md?raw'
 function App() {
   const [value, setValue] = useState('')
   const [theme, setTheme] = useState('light')
+  const [autoScroll, setAutoScroll] = useState(true)
   useEffect(() => {
     setTimeout(() => {
       setValue(defaultText)
@@ -35,15 +36,22 @@ function App() {
           />
         </header>
         <button
-          className="theme-button"
-          onClick={toggleTheme}
+          className="btn"
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         >
           切换主题
+        </button>
+        <button
+          className="btn"
+          onClick={() => setAutoScroll(!autoScroll)}
+        >
+          跟随滚动：{autoScroll ? '开' : '关'}
         </button>
         <div style={{ margin: '20px auto', width: '90%' }}>
           <MEditor
             value={value}
             theme={theme}
+            autoScroll={autoScroll}
             debounceRender={true}
             debounceRenderWait={500}
             onChange={handleChange}

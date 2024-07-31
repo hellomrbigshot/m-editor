@@ -28,7 +28,8 @@
 .app-link {
   color: #61dafb;
 }
-.theme-button {
+.btn {
+  margin-right: 10px;
   cursor: pointer;
   padding: 5px;
   background: #fff;
