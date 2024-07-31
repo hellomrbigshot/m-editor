@@ -29,21 +29,23 @@ export interface EditorProps {
   debounceRenderWait?: number
 }
 
-export default function Editor(props: EditorProps) {
-  const {
-    placeholder,
-    theme,
-    showLineNum,
-    value,
-    onFullScreenChange,
-    onModeChange,
-    autoScroll,
-    debounceRender,
-    debounceRenderWait,
-    onChange,
-  } = props
-  const [mode, setMode] = useState(props.mode)
-  const [fullScreen, setFullScreen] = useState(props.fullScreen)
+export default function Editor({
+  fullScreen: originFullScreen = false,
+  showLineNum = true,
+  placeholder = '',
+  mode: originMode = 'live',
+  theme = 'dark',
+  // contentType = 'markdown',
+  value = '',
+  autoScroll = true,
+  debounceRender = false,
+  debounceRenderWait = 200,
+  onFullScreenChange,
+  onModeChange,
+  onChange,
+}: EditorProps) {
+  const [mode, setMode] = useState(originMode)
+  const [fullScreen, setFullScreen] = useState(originFullScreen)
   const [iconLength, setIconLength] = useState(config.length)
   const [columnsLength, setColumnsLength] = useState(1)
   const [scrollType, setScrollType] = useState('edit')
@@ -240,17 +242,4 @@ Editor.propTypes = {
   onModeChange: PropTypes.func,
   debounceRender: PropTypes.bool,
   debounceRenderWait: PropTypes.number,
-}
-
-Editor.defaultProps = {
-  fullScreen: false,
-  showLineNum: true,
-  placeholder: '',
-  mode: 'live',
-  theme: 'dark',
-  contentType: 'markdown',
-  value: '',
-  autoScroll: true,
-  debounceRender: false,
-  debounceRenderWait: 200,
 }
