@@ -22,4 +22,4 @@ pnpm-lock.yaml
 **/*.yaml
 **/*.md
 
-**/*.yml
+# **/*.yml
