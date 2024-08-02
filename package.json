@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "format": "prettier --config .prettierrc '.' --write"
+    "format": "prettier --config .prettierrc '.' --write",
+    "release": "pnpm --recursive --stream build && changeset publish"
   },
   "repository": {
     "type": "git",
