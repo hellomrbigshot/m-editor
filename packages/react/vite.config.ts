@@ -23,10 +23,10 @@ export default defineConfig(({ mode }) => {
         lib: {
           // Could also be a dictionary or array of multiple entry points
           entry: resolve(__dirname, 'src/index.ts'),
-          name: 'ReactMEditor',
+          name: 'MEditor',
           // the proper extensions will be added
           fileName: (format) => {
-            return `react-m-editor.${format === 'es' ? 'mjs' : `${format}.js`}`
+            return `simple-m-editor.${format === 'es' ? 'mjs' : `${format}.js`}`
           },
         },
         rollupOptions: {
