@@ -1,5 +1,5 @@
 {
-  "name": "m-editor",
+  "name": "simple-m-editor",
   "version": "1.0.0",
   "description": "Markdown editor component monorepo supports react and vue",
   "main": "index.js",

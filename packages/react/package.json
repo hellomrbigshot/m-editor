@@ -1,10 +1,10 @@
 {
-  "name": "@m-editor/react",
+  "name": "@simple-m-editor/react",
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/react-m-editor.umd.js",
-  "module": "dist/react-m-editor.mjs",
-  "unpkg": "dist/react-m-editor.umd.js",
+  "main": "dist/simple-m-editor.umd.js",
+  "module": "dist/simple-m-editor.mjs",
+  "unpkg": "dist/simple-m-editor.umd.js",
   "browser": {
     "./sfc": "src/index.ts"
   },
