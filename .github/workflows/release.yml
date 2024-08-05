@@ -2,7 +2,10 @@ name: Release
 
 on:
   push:
-    branches: main
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
@@ -27,8 +30,19 @@ jobs:
       - name: Install Dependencies
         run: pnpm i
 
-      - name: Install and Build 🔧
-        run: pnpm release
+      # https://github.com/changesets/action
+      # 自动创建发布 PR 或 发布 npm
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        # 参数配置
+        with:
+          # 消耗 changeset 文件的命令；不需要自定义可不填
+          version: pnpm changeset version
+          # 提交的信息是什么；如果有 commitlint 验证，需要更改。
+          commit: 'chore: update versions'
+          title: 'chore: update versions'
+          # 发布时执行什么命令
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
