@@ -1,4 +1,4 @@
-# react-m-editor
+# @m-editor/react
 
 > A markdown editor with React.js
 
