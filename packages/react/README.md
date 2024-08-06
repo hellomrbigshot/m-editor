@@ -1,9 +1,9 @@
-# @m-editor/react
+# @simple-m-editor/react
 
 > A markdown editor with React.js
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/hellomrbigshot/react-m-editor)
-![GitHub](https://img.shields.io/github/license/hellomrbigshot/react-m-editor)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/hellomrbigshot/@simple-m-editor/react)
+![GitHub](https://img.shields.io/github/license/hellomrbigshot/@simple-m-editor/react)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
@@ -11,13 +11,13 @@
 
 ```
 // npm
-npm install -S react-m-editor highlight.js marked prop-types
+npm install -S @simple-m-editor/react highlight.js marked prop-types
 
 // yarn
-yarn add react-m-editor highlight.js marked prop-types
+yarn add @simple-m-editor/react highlight.js marked prop-types
 
 // pnpm
-pnpm install react-m-editor highlight.js marked prop-types
+pnpm install @simple-m-editor/react highlight.js marked prop-types
 ```
 
 ## Usage with React
@@ -27,8 +27,8 @@ Use the component
 ```jsx
 import React, { useState } from 'react'
 
-import { MEditor } from 'react-m-editor'
-import 'react-m-editor/dist/index.min.css'
+import { MEditor } from '@simple-m-editor/react'
+import '@simple-m-editor/react/dist/index.min.css'
 
 function Example () {
   const [value, setValue] = useState('')
@@ -53,7 +53,7 @@ The component also exports ```marked``` function:
 // <code> or <code class="language-*"> tag
 // to <code class="hljs">
 
-import { marked } from 'react-m-editor'
+import { marked } from '@simple-m-editor/react'
 
 let a = '```console.log('hello world')```'
 console.log(marked(a)) // <p><code class="hljs">console.log(&#39;hello world&#39;)</code></p>
@@ -62,7 +62,7 @@ console.log(marked(a)) // <p><code class="hljs">console.log(&#39;hello world&#39
 
 ## Preview
 
-[address](https://hellomrbigshot.github.io/react-m-editor)
+[address](https://hellomrbigshot.github.io/@simple-m-editor/react)
 
 ## Api
 
