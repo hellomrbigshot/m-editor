@@ -1,5 +1,12 @@
 # @simple-m-editor/react
 
+## 0.0.4
+
+### Patch Changes
+
+- 9780781: feat: update README.md
+- f9c974c: feat: update build config
+
 ## 0.0.3
 
 ### Patch Changes
