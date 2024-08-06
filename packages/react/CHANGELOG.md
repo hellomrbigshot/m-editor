@@ -1,4 +1,4 @@
-# @m-editor/react
+# @simple-m-editor/react
 
 ## 0.0.3
 

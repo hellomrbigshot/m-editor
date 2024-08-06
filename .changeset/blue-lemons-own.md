@@ -1,5 +1,5 @@
 ---
-'@m-editor/react': patch
+'@simple-m-editor/react': patch
 ---
 
 feat: update README.md
