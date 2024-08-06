@@ -1,5 +1,5 @@
 {
-  "name": "@m-editor/react",
+  "name": "@simple-m-editor/react",
   "version": "0.0.3",
   "type": "module",
   "main": "dist/simple-m-editor.umd.js",
