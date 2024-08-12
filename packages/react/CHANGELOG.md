@@ -1,5 +1,11 @@
 # @simple-m-editor/react
 
+## 0.0.5
+
+### Patch Changes
+
+- 5c49b6f: Feat: format constants and utils code
+
 ## 0.0.4
 
 ### Patch Changes
