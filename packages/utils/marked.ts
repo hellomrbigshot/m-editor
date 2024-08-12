@@ -1,7 +1,7 @@
-import hljs from './hljs'
+import { hljs } from './hljs'
 import { markedHighlight } from 'marked-highlight'
 import { Marked } from 'marked'
-const markedFun = new Marked(
+export const markedFun = new Marked(
   markedHighlight({
     langPrefix: 'hljs language-',
     highlight(code, lang) {
@@ -16,7 +16,7 @@ const markedFun = new Marked(
   },
 )
 
-export const betterMarked = (str: string) => {
+export const marked = (str: string) => {
   // replace <code> tags to <code class="hljs">
   return (markedFun.parse(str) as string).replace(/<code( class="language-[A-Za-z]*")?>/g, '<code class="hljs">')
 }

@@ -33,7 +33,9 @@
   "peerDependencies": {
     "highlight.js": "^11.9.0",
     "marked": "^12.0.0",
-    "marked-highlight": "^2.1.1"
+    "marked-highlight": "^2.1.1",
+    "@simple-m-editor/utils": "workspace:*",
+    "@simple-m-editor/constants": "workspace:*"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",

@@ -3,9 +3,8 @@ import { useMemoizedFn } from 'ahooks'
 import * as PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { throttle, debounce as debounceFunc } from 'lodash-es'
-import { betterMarked } from '../assets/js/betterMarked'
-
-import { config } from '../assets/js/config'
+import { TOOLBAR_CONFIG } from '@simple-m-editor/constants'
+import { marked } from '@simple-m-editor/utils'
 import ToolBar from './ToolBar'
 import Column from './Column'
 
@@ -46,7 +45,7 @@ export default function Editor({
 }: EditorProps) {
   const [mode, setMode] = useState(originMode)
   const [fullScreen, setFullScreen] = useState(originFullScreen)
-  const [iconLength, setIconLength] = useState(config.length)
+  const [iconLength, setIconLength] = useState(TOOLBAR_CONFIG.length)
   const [columnsLength, setColumnsLength] = useState(1)
   const [scrollType, setScrollType] = useState('edit')
   const [markedHtml, setMarkedHtml] = useState('')
@@ -66,7 +65,7 @@ export default function Editor({
     if (debounceRender) {
       debounceMarked.current(_value)
     } else {
-      setMarkedHtml(betterMarked(_value))
+      setMarkedHtml(marked(_value))
     }
   })
   useEffect(() => {
@@ -83,13 +82,13 @@ export default function Editor({
     const width = mEditor.current!.clientWidth
     let iconLength: number = 0
     if (width > 780) {
-      iconLength = config.length
+      iconLength = TOOLBAR_CONFIG.length
     } else if (width > 680) {
-      iconLength = config.length - 3
+      iconLength = TOOLBAR_CONFIG.length - 3
     } else if (width > 640) {
-      iconLength = config.length - 6
+      iconLength = TOOLBAR_CONFIG.length - 6
     } else if (width > 500) {
-      iconLength = config.length - 9
+      iconLength = TOOLBAR_CONFIG.length - 9
       iconLength = 0
       setMode('edit')
     }
@@ -118,7 +117,7 @@ export default function Editor({
   }
   const debounceMarked = useRef(
     debounceFunc((value: string) => {
-      setMarkedHtml(betterMarked(value))
+      setMarkedHtml(marked(value))
     }, debounceRenderWait),
   )
   const handleAppendContent = (str?: string) => {
@@ -127,7 +126,7 @@ export default function Editor({
     const pos = mTextarea.current!.selectionStart || 0
     if (pos > -1) {
       const content: string = `${value!.slice(0, pos)}${str}${value!.slice(pos)}`
-      onChange && onChange({ content, htmlContent: betterMarked(content) })
+      onChange && onChange({ content, htmlContent: marked(content) })
       // setHtml(content)
       mTextarea.current!.blur()
       setTimeout(() => {
@@ -155,7 +154,7 @@ export default function Editor({
   const handleValueChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     // get value
     const content = e.target.value
-    onChange && onChange({ content, htmlContent: betterMarked(content) })
+    onChange && onChange({ content, htmlContent: marked(content) })
     // setHtml(content)
   }
 
