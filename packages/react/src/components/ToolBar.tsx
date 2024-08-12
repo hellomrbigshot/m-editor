@@ -1,4 +1,4 @@
-import { config } from '../assets/js/config'
+import { TOOLBAR_CONFIG } from '@simple-m-editor/constants'
 import * as PropTypes from 'prop-types'
 import ToolTip from './ToolTip'
 import '../assets/css/icon.css'
@@ -38,7 +38,7 @@ function Toolbar(props: ToolBarProps) {
   return (
     <div className="editor-toolbar">
       <ul className="editor-toolbar-tools">
-        {config.map((item, key) => {
+        {TOOLBAR_CONFIG.map((item, key) => {
           return item.showIcon && key < iconLength ? (
             <li key={key}>
               {item.children && item.children.length ? (

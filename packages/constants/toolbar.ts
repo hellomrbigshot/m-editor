@@ -1,4 +1,19 @@
-const config = [
+export interface EditorToolbarConfigChildrenItem {
+  text: string
+  size: number | string
+  title: string
+  content: string
+}
+
+export interface EditorToolbarConfigItem {
+  icon: string
+  title: string
+  showIcon: boolean
+  content?: string
+  children?: EditorToolbarConfigChildrenItem[]
+}
+
+export const TOOLBAR_CONFIG: Array<EditorToolbarConfigItem> = [
   {
     icon: 'icon-zitibiaoti',
     title: '标题',
@@ -121,4 +136,3 @@ const config = [
     showIcon: true,
   },
 ]
-export { config }

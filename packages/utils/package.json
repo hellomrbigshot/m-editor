@@ -1,0 +1,6 @@
+{
+  "name": "@simple-m-editor/utils",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts"
+}
