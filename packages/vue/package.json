@@ -1,6 +1,6 @@
 {
   "name": "@simple-m-editor/vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/simple-m-editor.umd.js",
   "module": "simple-m-editor.mjs",
