@@ -1,5 +1,11 @@
 # @simple-m-editor/react
 
+## 0.0.6
+
+### Patch Changes
+
+- 7325473: feat: update ci
+
 ## 0.0.5
 
 ### Patch Changes
