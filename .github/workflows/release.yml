@@ -36,6 +36,8 @@ jobs:
         uses: changesets/action@v1
         # 参数配置
         with:
+          # This outputs `changed` package names to an environment variable
+          write-changeset-summary: true
           # 消耗 changeset 文件的命令；不需要自定义可不填
           version: pnpm changeset version
           # 提交的信息是什么；如果有 commitlint 验证，需要更改。
@@ -47,6 +49,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo ${{ steps.changesets.outputs.changedPackages }}
 
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
