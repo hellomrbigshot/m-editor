@@ -1,6 +1,6 @@
 {
   "name": "@simple-m-editor/react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/simple-m-editor.umd.js",
   "module": "dist/simple-m-editor.mjs",
