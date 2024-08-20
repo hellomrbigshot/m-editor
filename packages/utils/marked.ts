@@ -16,6 +16,12 @@ export const markedFun = new Marked(
   },
 )
 
+/**
+ * replace all <code class="language-xxx"> to <code class="hljs">
+ *
+ * @param str
+ * @returns
+ */
 export const marked = (str: string) => {
   // replace <code> tags to <code class="hljs">
   return (markedFun.parse(str) as string).replace(/<code( class="language-[A-Za-z]*")?>/g, '<code class="hljs">')
