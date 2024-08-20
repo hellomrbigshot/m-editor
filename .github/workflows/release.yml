@@ -44,13 +44,11 @@ jobs:
           commit: 'chore: update versions'
           title: 'chore: update versions'
           # 发布时执行什么命令
-          publish: pnpm release
+          publish: echo ${{ steps.changesets.outputs.changedPackages }} && pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo ${{ steps.changesets.outputs.changedPackages }}
 
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
