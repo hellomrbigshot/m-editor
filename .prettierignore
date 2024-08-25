@@ -12,6 +12,8 @@ pnpm-lock.yaml
 **/*.scss
 **/*.css
 
+**/*.html
+
 
 **/.git
 **/.svn

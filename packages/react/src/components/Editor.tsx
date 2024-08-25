@@ -143,11 +143,9 @@ export default function Editor({
         const editWrapperMaxScrollTop = editWrapper.current!.scrollHeight - editWrapper.current!.clientHeight
         const previewWrapperMaxScrollTop = previewWrapper.current!.scrollHeight - previewWrapper.current!.clientHeight
         if (scrollType === 'edit') {
-          previewWrapper.current!.scrollTop =
-            (editWrapper.current!.scrollTop / editWrapperMaxScrollTop) * previewWrapperMaxScrollTop
+          previewWrapper.current!.scrollTop = (editWrapper.current!.scrollTop / editWrapperMaxScrollTop) * previewWrapperMaxScrollTop
         } else if (scrollType === 'preview') {
-          editWrapper.current!.scrollTop =
-            (previewWrapper.current!.scrollTop / previewWrapperMaxScrollTop) * editWrapperMaxScrollTop
+          editWrapper.current!.scrollTop = (previewWrapper.current!.scrollTop / previewWrapperMaxScrollTop) * editWrapperMaxScrollTop
         }
       }, 200)
     : undefined
@@ -206,11 +204,7 @@ export default function Editor({
           </div>
         </div>
         <div
-          className={classnames(
-            'editor-content-preview',
-            mode === 'preview' && 'active',
-            mode === 'edit' && 'inactive',
-          )}
+          className={classnames('editor-content-preview', mode === 'preview' && 'active', mode === 'edit' && 'inactive')}
           ref={previewWrapper}
           onMouseEnter={() => {
             setScrollType('preview')

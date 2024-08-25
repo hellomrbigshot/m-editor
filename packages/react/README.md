@@ -11,13 +11,13 @@
 
 ```
 // npm
-npm install -S @simple-m-editor/react highlight.js marked prop-types
+npm install -S @simple-m-editor/react highlight.js marked marked-highlight prop-types
 
 // yarn
-yarn add @simple-m-editor/react highlight.js marked prop-types
+yarn add @simple-m-editor/react highlight.js marked marked-highlight prop-types
 
 // pnpm
-pnpm install @simple-m-editor/react highlight.js marked prop-types
+pnpm add @simple-m-editor/react highlight.js marked marked-highlight prop-types
 ```
 
 ## Usage with React

@@ -7,6 +7,7 @@ const globals = {
   react: 'React',
   'highlight.js': 'hljs',
   marked: 'marked',
+  'marked-highlight': 'markedHighlight',
 }
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -31,7 +32,7 @@ export default defineConfig(({ mode }) => {
         },
         rollupOptions: {
           // 确保外部化处理那些你不想打包进库的依赖
-          external: ['react', 'marked', 'highlight.js'],
+          external: ['react', 'marked', 'highlight.js', 'marked-highlight'],
           plugins: [typescript({ declarationDir: './dist/typings' })],
           output: {
             // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量

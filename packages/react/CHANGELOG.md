@@ -10,7 +10,7 @@
 
 ### Patch Changes
 
-- 5c49b6f: Feat: format constants and utils code
+- 5c49b6f: feat: format constants and utils code
 
 ## 0.0.4
 
@@ -23,13 +23,13 @@
 
 ### Patch Changes
 
-- b70c87d: Feat: add github actions release yml
+- b70c87d: feat: add github actions release yml
 - 8ea6f52: feat: add prepare script
-- 08b7b5f: Feat: add release script
+- 08b7b5f: feat: add release script
 - 80ebec4: docs: update README.md
 
 ## 0.0.2
 
 ### Patch Changes
 
-- fd97735: Init Project
+- fd97735: feat: init Project

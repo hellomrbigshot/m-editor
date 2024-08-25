@@ -10,4 +10,4 @@
 
 ### Patch Changes
 
-- 5c49b6f: Feat: format constants and utils code
+- 5c49b6f: feat: format constants and utils code

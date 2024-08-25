@@ -23,7 +23,7 @@
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true,
-    "noImplicitAny": false,
+    "noImplicitAny": false
   },
   "include": [
     "packages/**/*.ts",
