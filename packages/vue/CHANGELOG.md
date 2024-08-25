@@ -1,5 +1,11 @@
 # @simple-m-editor/vue
 
+## 0.0.5
+
+### Patch Changes
+
+- 01f189e: fix: update CI
+
 ## 0.0.4
 
 ### Patch Changes

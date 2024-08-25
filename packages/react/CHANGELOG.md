@@ -1,5 +1,11 @@
 # @simple-m-editor/react
 
+## 0.0.8
+
+### Patch Changes
+
+- 01f189e: fix: update CI
+
 ## 0.0.7
 
 ### Patch Changes
