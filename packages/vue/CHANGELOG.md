@@ -1,5 +1,11 @@
 # @simple-m-editor/vue
 
+## 0.0.4
+
+### Patch Changes
+
+- 2bfbd83: feat: update README.md
+
 ## 0.0.3
 
 ### Patch Changes
