@@ -1,5 +1,11 @@
 # @simple-m-editor/react
 
+## 0.0.7
+
+### Patch Changes
+
+- 2bfbd83: feat: update README.md
+
 ## 0.0.6
 
 ### Patch Changes
