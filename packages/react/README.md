@@ -4,6 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/@simple-m-editor/react)](https://www.npmjs.com/package/@simple-m-editor/react)
 ![GitHub](https://img.shields.io/github/license/hellomrbigshot/m-editor)
+[![](https://github.com/hellomrbigshot/m-editor/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/hellomrbigshot/m-editor/actions)
 
 
 ## Install

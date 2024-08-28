@@ -13,7 +13,7 @@
     "gh-pages": "vite build --mode gh-pages",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "vite build"
+    "prepare": "pnpm i && vite build"
   },
   "dependencies": {
     "ahooks": "^3.7.10",
