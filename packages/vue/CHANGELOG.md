@@ -1,5 +1,11 @@
 # @simple-m-editor/vue
 
+## 0.0.6
+
+### Patch Changes
+
+- c63042b: feat: update CI
+
 ## 0.0.5
 
 ### Patch Changes
