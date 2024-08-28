@@ -2,9 +2,8 @@
 
 > A markdown editor with React.js
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/hellomrbigshot/@simple-m-editor/react)
-![GitHub](https://img.shields.io/github/license/hellomrbigshot/@simple-m-editor/react)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![npm](https://img.shields.io/npm/v/@simple-m-editor/react)](https://www.npmjs.com/package/@simple-m-editor/react)
+![GitHub](https://img.shields.io/github/license/hellomrbigshot/m-editor)
 
 
 ## Install
