@@ -1,5 +1,11 @@
 # @simple-m-editor/react
 
+## 0.0.9
+
+### Patch Changes
+
+- c63042b: feat: update CI
+
 ## 0.0.8
 
 ### Patch Changes
