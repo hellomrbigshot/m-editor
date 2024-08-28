@@ -11,9 +11,9 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "gh-pages": "vite build --mode gh-pages",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "vite build"
   },
   "files": [
     "dist"

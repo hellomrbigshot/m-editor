@@ -42,7 +42,7 @@ jobs:
           commit: 'chore: update versions'
           title: 'chore: update versions'
           # 发布时执行什么命令
-          publish: echo ${{ steps.changesets.outputs.changedPackages }} && pnpm release
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

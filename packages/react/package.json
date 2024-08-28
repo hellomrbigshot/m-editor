@@ -10,11 +10,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "gh-pages": "vite build --mode gh-pages",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "release": "vite build && changeset publish"
+    "prepare": "vite build"
   },
   "dependencies": {
     "ahooks": "^3.7.10",
