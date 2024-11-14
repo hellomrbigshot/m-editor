@@ -3,8 +3,9 @@
 > A markdown editor with Vue
 
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/hellomrbigshot/@simple-m-editor/vue)
-![GitHub](https://img.shields.io/github/license/hellomrbigshot/@simple-m-editor/vue)
+[![npm](https://img.shields.io/npm/v/@simple-m-editor/vue)](https://www.npmjs.com/package/@simple-m-editor/vue)
+![GitHub](https://img.shields.io/github/license/hellomrbigshot/m-editor)
+[![](https://github.com/hellomrbigshot/m-editor/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/hellomrbigshot/m-editor/actions)
 
 ## Install
 
